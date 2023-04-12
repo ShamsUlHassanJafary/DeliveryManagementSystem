@@ -8,12 +8,12 @@
     "method": "POST",
     "sortNum": 10000,
     "created": "2023-04-10T17:46:30.155Z",
-    "modified": "2023-04-10T17:48:18.715Z",
+    "modified": "2023-04-12T18:33:07.256Z",
     "headers": [],
     "params": [],
     "body": {
       "type": "json",
-      "raw": "{\r\n  \"name\": \"Electronics\",\r\n  \"description\": \"Electronics devices and gadgets\"\r\n}",
+      "raw": "{\n  \"name\": \"Multomedia\",\n  \"description\": \"Electronics devices and gadgets\"\n}",
       "form": []
     },
     "tests": []
@@ -39,7 +39,7 @@
     "method": "POST",
     "sortNum": 20000,
     "created": "2023-04-10T17:53:09.634Z",
-    "modified": "2023-04-10T18:54:59.335Z",
+    "modified": "2023-04-12T18:40:38.733Z",
     "headers": [],
     "params": [
       {
@@ -50,7 +50,7 @@
     ],
     "body": {
       "type": "json",
-      "raw": "{\r\n  \"name\": \"Nokia phone\",\r\n  \"description\": \"Latest Android smartphone\",\r\n  \"price\": 699.99\r\n}",
+      "raw": "{\n  \"name\": \"Nokia phone\",\n  \"description\": \"Latest Android smartphone\",\n  \"price\": 699.99\n}",
       "form": []
     },
     "tests": []
@@ -94,12 +94,12 @@
     "method": "POST",
     "sortNum": 10000,
     "created": "2023-04-11T04:29:03.230Z",
-    "modified": "2023-04-11T04:32:39.526Z",
+    "modified": "2023-04-12T18:41:09.484Z",
     "headers": [],
     "params": [],
     "body": {
       "type": "json",
-      "raw": "{\n  \"name\": \"xyz\",\n  \"address\": \"Multan\"\n}",
+      "raw": "{\n  \"name\": \"xy\",\n  \"address\": \"Multan\"\n}",
       "form": []
     },
     "tests": []
@@ -109,16 +109,16 @@
     "colId": "c10ba72d-56df-4d2e-a098-0ab786441ccb",
     "containerId": "",
     "name": "save or update",
-    "url": "http://localhost:8082/api/inventory/addOrUpdate?productId=6&warehouseId=2&quantity=50&minimumQuantity=10",
+    "url": "http://localhost:8082/api/inventory/addOrUpdate?productId=7&warehouseId=2&quantity=50&minimumQuantity=10",
     "method": "POST",
     "sortNum": 10000,
     "created": "2023-04-11T05:04:58.639Z",
-    "modified": "2023-04-11T05:23:36.746Z",
+    "modified": "2023-04-12T18:43:15.990Z",
     "headers": [],
     "params": [
       {
         "name": "productId",
-        "value": "6",
+        "value": "7",
         "isPath": false
       },
       {
@@ -156,6 +156,69 @@
     "modified": "2023-04-11T05:49:02.532Z",
     "headers": [],
     "params": [],
+    "tests": []
+  },
+  {
+    "_id": "a9edb451-0274-4d45-94a0-7a8fde18bd95",
+    "colId": "5fce190b-71be-4bf2-9651-e20ae6e5f44a",
+    "containerId": "",
+    "name": "create customer",
+    "url": "{{API}}/customers",
+    "method": "POST",
+    "sortNum": 10000,
+    "created": "2023-04-12T17:16:54.495Z",
+    "modified": "2023-04-12T18:44:23.298Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"firstName\": \"Jafary\",\n  \"lastName\" : \"Hassan\",\n  \"email\": \"shamskosa4@gmail.com\",\n  \"phone\": \"023724\",\n  \"address\": \"Lahore\"\n}\n  \n",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "5c1e8b91-cf5f-4883-a85a-ec76241fe8ac",
+    "colId": "3232b869-c4f7-4f5d-b7cd-fd61f9bcf3db",
+    "containerId": "",
+    "name": "create order with customer",
+    "url": "{{API}}/orders/create-order?customerId=1",
+    "method": "POST",
+    "sortNum": 10000,
+    "created": "2023-04-12T17:36:18.305Z",
+    "modified": "2023-04-12T17:57:13.382Z",
+    "headers": [],
+    "params": [
+      {
+        "name": "customerId",
+        "value": "1",
+        "isPath": false
+      }
+    ],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"orderDate\" : \"2023-04-12T14:30:00Z\",\n  \"status\": \"Created\",\n  \"shippingAddress\": \"Lahore\"\n} \n  ",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "6a9d3410-f798-409d-a7e5-87665488cb8b",
+    "colId": "c19c7f65-028f-47d9-b7ef-6f19f3dec466",
+    "containerId": "",
+    "name": "save",
+    "url": "{{API}}/order-items",
+    "method": "POST",
+    "sortNum": 10000,
+    "created": "2023-04-12T18:55:38.940Z",
+    "modified": "2023-04-12T19:03:41.140Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\r\n  \"order\": {\r\n    \"id\": 1\r\n  },\r\n  \"product\": {\r\n    \"id\": 5\r\n  },\r\n  \"quantity\": 2,\r\n  \"price\": 50.0\r\n}",
+      "form": []
+    },
     "tests": []
   }
 ]

@@ -1,10 +1,14 @@
 package com.example.deliverymanagementsystem.entity;
 
 import javax.persistence.*;
+
+import lombok.Data;
+
 import java.util.Date;
 import java.util.Set;
 
 @Entity
+@Data
 @Table(name = "customers")
 public class Customer {
 

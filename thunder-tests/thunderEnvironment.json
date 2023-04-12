@@ -1,1 +1,16 @@
-[]
+[
+  {
+    "_id": "bd6cec22-2c04-498c-ad75-e220d54ed0fc",
+    "name": "API",
+    "default": true,
+    "sortNum": 10000,
+    "created": "2023-04-12T17:26:28.087Z",
+    "modified": "2023-04-12T17:26:28.087Z",
+    "data": [
+      {
+        "name": "API",
+        "value": "http://localhost:8082"
+      }
+    ]
+  }
+]
