@@ -1,0 +1,161 @@
+[
+  {
+    "_id": "8e2dd208-15ed-40a7-ad21-f7506d8990ff",
+    "colId": "6cfef720-b33d-4911-abfd-0b487a058570",
+    "containerId": "",
+    "name": "post save category",
+    "url": "http://localhost:8082/api/categories",
+    "method": "POST",
+    "sortNum": 10000,
+    "created": "2023-04-10T17:46:30.155Z",
+    "modified": "2023-04-10T17:48:18.715Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\r\n  \"name\": \"Electronics\",\r\n  \"description\": \"Electronics devices and gadgets\"\r\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "f1f04275-477f-4a62-bdbb-cbdf5f437093",
+    "colId": "a1dfa8f2-6659-4126-85ba-ced634b5e21b",
+    "containerId": "",
+    "name": "post save product",
+    "url": "",
+    "method": "GET",
+    "sortNum": 10000,
+    "created": "2023-04-10T17:52:52.356Z",
+    "modified": "2023-04-10T17:52:52.356Z",
+    "headers": []
+  },
+  {
+    "_id": "8e63b50a-3978-4166-9926-eed3fc439376",
+    "colId": "a1dfa8f2-6659-4126-85ba-ced634b5e21b",
+    "containerId": "",
+    "name": "post save product",
+    "url": "http://localhost:8082/api/products?categoryId=2",
+    "method": "POST",
+    "sortNum": 20000,
+    "created": "2023-04-10T17:53:09.634Z",
+    "modified": "2023-04-10T18:54:59.335Z",
+    "headers": [],
+    "params": [
+      {
+        "name": "categoryId",
+        "value": "2",
+        "isPath": false
+      }
+    ],
+    "body": {
+      "type": "json",
+      "raw": "{\r\n  \"name\": \"Nokia phone\",\r\n  \"description\": \"Latest Android smartphone\",\r\n  \"price\": 699.99\r\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "32e203bd-61b0-4e95-931e-a1680cf7197c",
+    "colId": "a1dfa8f2-6659-4126-85ba-ced634b5e21b",
+    "containerId": "",
+    "name": "Search product",
+    "url": "http://localhost:8082/api/products/search?name=Apple phone&SKU=f17da080-f176-4267-a967-0e41d469d1d1&categoryId=1",
+    "method": "GET",
+    "sortNum": 30000,
+    "created": "2023-04-10T18:56:26.954Z",
+    "modified": "2023-04-10T19:15:15.221Z",
+    "headers": [],
+    "params": [
+      {
+        "name": "name",
+        "value": "Apple phone",
+        "isPath": false
+      },
+      {
+        "name": "SKU",
+        "value": "f17da080-f176-4267-a967-0e41d469d1d1",
+        "isPath": false
+      },
+      {
+        "name": "categoryId",
+        "value": "1",
+        "isPath": false
+      }
+    ],
+    "tests": []
+  },
+  {
+    "_id": "0e8247fc-ca6c-4486-8041-3a599808dec6",
+    "colId": "7eb8fb7f-d749-4a91-84c8-f08b58510e8f",
+    "containerId": "",
+    "name": "post save",
+    "url": "http://localhost:8082/api/warehouses",
+    "method": "POST",
+    "sortNum": 10000,
+    "created": "2023-04-11T04:29:03.230Z",
+    "modified": "2023-04-11T04:32:39.526Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"name\": \"xyz\",\n  \"address\": \"Multan\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "b1aba5cd-aaf9-4874-87c1-31fe87e8f844",
+    "colId": "c10ba72d-56df-4d2e-a098-0ab786441ccb",
+    "containerId": "",
+    "name": "save or update",
+    "url": "http://localhost:8082/api/inventory/addOrUpdate?productId=6&warehouseId=2&quantity=50&minimumQuantity=10",
+    "method": "POST",
+    "sortNum": 10000,
+    "created": "2023-04-11T05:04:58.639Z",
+    "modified": "2023-04-11T05:23:36.746Z",
+    "headers": [],
+    "params": [
+      {
+        "name": "productId",
+        "value": "6",
+        "isPath": false
+      },
+      {
+        "name": "warehouseId",
+        "value": "2",
+        "isPath": false
+      },
+      {
+        "name": "quantity",
+        "value": "50",
+        "isPath": false
+      },
+      {
+        "name": "minimumQuantity",
+        "value": "10",
+        "isPath": false
+      }
+    ],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "dac6a7fc-7adf-44ee-bf87-a6aafd4ed5e2",
+    "colId": "c10ba72d-56df-4d2e-a098-0ab786441ccb",
+    "containerId": "",
+    "name": "list Inventory",
+    "url": "http://localhost:8082/api/inventory/list/2",
+    "method": "GET",
+    "sortNum": 20000,
+    "created": "2023-04-11T05:21:21.233Z",
+    "modified": "2023-04-11T05:49:02.532Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  }
+]
